@@ -10,7 +10,5 @@ root.render(
   <React.StrictMode>
     {/* <App /> */}
     <StaticRating maxRating={5} />
-    <StaticRating maxRating={10} />
-    <StaticRating />
   </React.StrictMode>
 );
