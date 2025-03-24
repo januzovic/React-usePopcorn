@@ -1,11 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+// import './index.css';
+// import App from './App';
+
+import StaticRating from './StarRating';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <StaticRating maxRating={5} />
+    <StaticRating maxRating={10} />
+    <StaticRating />
   </React.StrictMode>
 );
