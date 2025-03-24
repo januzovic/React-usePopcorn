@@ -17,12 +17,15 @@ export default function StaticRating({
   size = 48,
   className = '',
   messages = [],
+  defaultRating = 0,
+  onSetRating,
 }) {
-  const [rating, setRating] = useState(0);
-  const [tempRating, setTempRating] = useState(0);
+  const [rating, setRating] = useState(defaultRating);
+  const [tempRating, setTempRating] = useState(defaultRating);
 
   function handleRating(rating) {
     setRating(rating);
+    onSetRating(rating);
   }
 
   const textStyle = {
