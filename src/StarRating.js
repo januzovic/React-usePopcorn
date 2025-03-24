@@ -113,6 +113,7 @@ function Star({ onRate, full, onHoverIn, onHoverOut, color, size }) {
     </span>
   );
 }
+// End of section 10
 
 /*
 FULL STAR
